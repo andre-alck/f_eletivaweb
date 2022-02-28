@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tarefa 2</title>
+        <style>
+            body {
+                color: white;
+            }
+
+            .box {
+                margin: auto;
+                width: 50%;
+                background-color: #fdafb1;
+                padding: 1%;
+
+                text-align: center;
+            }
+
+            .header_footer {
+                background-color: #98d1c7;
+                padding: 1%;
+            }
+
+            .flexbox {
+                margin-top: 1%;
+                margin-bottom: 1%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            aside {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                width: 32%;
+                background-color: #62b7b6;
+            }
+
+            article {
+                width: 67%;
+                height: 300px;
+                background-color: #fa7a7b;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            .image {
+                background-color: #d6d5d5;
+
+                width: 32%;
+                height: 100px;
+                margin: 1%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <header>
+                <div class="header_footer">Header</div>
+            </header>
+
+            <div class="flexbox">
+                <aside>Aside</aside>
+                <article>
+                    Article
+                    <div class="flexbox">
+                        <div class="image">Image</div>
+                        <div class="image">Image</div>
+                        <div class="image">Image</div>
+                    </div>
+                </article>
+            </div>
+
+            <footer>
+                <div class="header_footer">Footer</div>
+            </footer>
+        </div>
+    </body>
+</html>
