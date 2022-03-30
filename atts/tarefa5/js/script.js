@@ -1,14 +1,14 @@
 var prods = [{
     id: 1,
-    name: "Bife com batatas"
+    name: "Bife com batata"
 },
 {
     id: 2,
-    name: "Coxa de frango crocante"
+    name: "Coxa de Frango Crocante"
 },
 {
     id: 3,
-    name: "Carne de panela"
+    name: "Carne de Panela"
 },
 {
     id: 4,
@@ -36,13 +36,13 @@ customer_phone = document.getElementById('phone').value
 customer_email = document.getElementById('email').value
 
 if (customer_name == "" || customer_phone == "" || customer_email == "") {
-    document.getElementById("calculate").innerHTML = "Por favor, insira todos os dados para continuar."
+    document.getElementById("calculate").innerHTML = "É necessário preencher todos os dados antes de continuar."
     setTimeout(() => {
         document.getElementById("calculate").innerHTML = "Calcular";
     }, 1500);
 
 } else {
-    saida.innerHTML += "Caro <b>" + customer_name + "</b><br><br> Seguem os dados do seu pedido. <br><br> O seu pedido é: <br><br>"
+    saida.innerHTML += "Caro <b>" + customer_name + "</b><br><br> O seu pedido é: <br><br>"
     var finalPrice = 0,
         quantSum = 0;
 
@@ -62,11 +62,11 @@ if (customer_name == "" || customer_phone == "" || customer_email == "") {
     }, "slow");
     
     if (quantSum == 0) {
-        document.getElementById("calculate").innerHTML = "Atenção, pedido vazio."
+        document.getElementById("calculate").innerHTML = "Pedido vazio."
         setTimeout(() => {
             document.getElementById("calculate").innerHTML = "Calcular";
         }, 1500);
     }
-    saida.innerHTML += "<br><br><b>Preço final R$ " + finalPrice + ",00<b>";
+    saida.innerHTML += "<br><br><b>Preço final: R$ " + finalPrice + ",00<b>";
 }
 }
