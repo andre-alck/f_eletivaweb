@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tarefa 5</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/quantity.css" />
+
+        <script src="js/javascript.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/quantity.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+
+    <body>
+        <main id="main-content">
+            <!-- #region Cabeçalho -->
+            <header>
+                <img src="/images/banner.jpg" id="banner" alt="Banner" />
+                <div class="description">
+                    <h1>Menu - Faça A Sua Escolha</h1>
+                </div>
+            </header>
+            <!-- #endregion -->
+
+            <!-- #region Container 1-->
+            <div class="container">
+                <div class="description">
+                    <h3>Prato Principal</h3>
+                    <p>
+                        Todos os pratos acompanham arroz, feijão e a sobremesa
+                        do dia.
+                    </p>
+                </div>
+
+                <!-- #region Junção dos cards-->
+                <div class="cards">
+                    <!-- #region Card singular-->
+                    <div class="card">
+                        <img
+                            src="images/bife-com-batata.jpg"
+                            class="images"
+                            alt="Bife com batata"
+                        />
+                        <div class="description">
+                            <p>Bife com batata</p>
+                            <p id="price">R$ 30,00</p>
+                        </div>
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus" />
+                            <input
+                                type="number"
+                                step="1"
+                                min="0"
+                                max=""
+                                id="1"
+                                name="quantity"
+                                value="0"
+                                title="Qty"
+                                class="input-text qty text"
+                                size="4"
+                                pattern=""
+                                inputmode=""
+                            />
+                            <input type="button" value="+" class="plus" />
+                        </div>
+                    </div>
+                    <!-- #endregion -->
+
+                    <!-- #region Card singular-->
+                    <div class="card">
+                        <img
+                            src="images/coxa-de-frango-crocante.jpg"
+                            class="images"
+                            alt="Coxa de Frango Crocante"
+                        />
+                        <div class="description">
+                            <p>Coxa de Frango Crocante</p>
+                            <p id="price">R$ 25,00</p>
+                        </div>
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus" />
+                            <input
+                                type="number"
+                                step="1"
+                                min="0"
+                                max=""
+                                id="1"
+                                name="quantity"
+                                value="0"
+                                title="Qty"
+                                class="input-text qty text"
+                                size="4"
+                                pattern=""
+                                inputmode=""
+                            />
+                            <input type="button" value="+" class="plus" />
+                        </div>
+                    </div>
+                    <!-- #endregion -->
+
+                    <!-- #region Card singular-->
+                    <div class="card">
+                        <img
+                            src="images/carne-de-panela.jpg"
+                            class="images"
+                            alt="Carne de Panela"
+                        />
+                        <div class="description">
+                            <p>Carne de Panela</p>
+                            <p id="price">R$ 22,00</p>
+                        </div>
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus" />
+                            <input
+                                type="number"
+                                step="1"
+                                min="0"
+                                max=""
+                                id="1"
+                                name="quantity"
+                                value="0"
+                                title="Qty"
+                                class="input-text qty text"
+                                size="4"
+                                pattern=""
+                                inputmode=""
+                            />
+                            <input type="button" value="+" class="plus" />
+                        </div>
+                    </div>
+                </div>
+                <!-- #endregion -->
+            </div>
+            <!-- #endregion -->
+
+            <div class="container">
+                <div class="description">
+                    <h3>Acompanhamentos</h3>
+                    <p>Porções para uma pessoa</p>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <img
+                            src="images/farofa.jpg"
+                            class="images"
+                            alt="Farofa"
+                        />
+                        <div class="description">
+                            <p>Farofa</p>
+                            <p id="price">R$ 10,00</p>
+                        </div>
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus" />
+                            <input
+                                type="number"
+                                step="1"
+                                min="0"
+                                max=""
+                                id="1"
+                                name="quantity"
+                                value="0"
+                                title="Qty"
+                                class="input-text qty text"
+                                size="4"
+                                pattern=""
+                                inputmode=""
+                            />
+                            <input type="button" value="+" class="plus" />
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img
+                            src="images/salada.jpg"
+                            class="images"
+                            alt="Salada"
+                        />
+                        <div class="description">
+                            <p>Salada</p>
+                            <p id="price">R$ 8,00</p>
+                        </div>
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus" />
+                            <input
+                                type="number"
+                                step="1"
+                                min="0"
+                                max=""
+                                id="1"
+                                name="quantity"
+                                value="0"
+                                title="Qty"
+                                class="input-text qty text"
+                                size="4"
+                                pattern=""
+                                inputmode=""
+                            />
+                            <input type="button" value="+" class="plus" />
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img
+                            src="images/torresmo.jpg"
+                            class="images"
+                            alt="Torresmo"
+                        />
+                        <div class="description">
+                            <p>Torresmo</p>
+                            <p id="price">R$ 12,00</p>
+                        </div>
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus" />
+                            <input
+                                type="number"
+                                step="1"
+                                min="0"
+                                max=""
+                                id="1"
+                                name="quantity"
+                                value="0"
+                                title="Qty"
+                                class="input-text qty text"
+                                size="4"
+                                pattern=""
+                                inputmode=""
+                            />
+                            <input type="button" value="+" class="plus" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <div class="description"><p>Dados Pessoais</p></div>
+                <div class="inputs">
+                    <div class="input">
+                        <input
+                            type="text"
+                            placeholder="Digite o seu nome"
+                            id="name"
+                        />
+                    </div>
+
+                    <div class="input">
+                        <input
+                            type="text"
+                            placeholder="Digite o seu telefone"
+                            id="phone"
+                        />
+                    </div>
+
+                    <div class="input">
+                        <input
+                            type="text"
+                            placeholder="Digite o seu email"
+                            id="email"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <button id="calculate" onclick="calculate()">Calcular</button>
+        </main>
+    </body>
+</html>
