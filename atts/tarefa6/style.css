@@ -1,0 +1,194 @@
+body {
+    background-color: darkgrey;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    width: 1000px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.container-fluid {
+    background-color: lightblue;
+    padding: 15px;
+}
+
+.topo > img {
+    width: 900px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.menu_prato_principal {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin-left: 50px;
+    margin-right: 47px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.cardapio {
+    display: flex;
+    flex-direction: row;
+    width: 94%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 3px;
+}
+
+.imagens > img {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.personal-data {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 47px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+#tall {
+    font-size: 30px;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quantity .input-text.qty {
+    width: 35px;
+    height: 39px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+}
+
+.quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top;
+    padding-bottom: 5px;
+}
+
+.quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+    padding: 7px 10px 8px;
+    height: 41px;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    cursor: pointer;
+}
+
+.quantity.buttons_added .minus {
+    border-right: 0;
+}
+
+.quantity.buttons_added .plus {
+    border-left: 0;
+}
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+    background: #eeeeee;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+    outline: none;
+}
+
+#saida {
+    text-align: left;
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: 100;
+}
+
+.personal-data > input {
+    margin: auto;
+    width: 90%;
+    height: 50px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.personal-data > input:focus {
+    border: none;
+}
+
+.personal-data > h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#calculate {
+    background-color: lightblue;
+    height: 30px;
+    margin: top 40px;
+    width: 80%;
+    margin: auto;
+    transition: 0.3s;
+    border: none;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+#calculate:hover {
+    width: 50%;
+    border-radius: 116px;
+}
